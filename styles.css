@@ -33,7 +33,10 @@ header p {
 
 .services {
   background-color: #e6f5ea;
-  padding: 30px 15px;
+  max-width: 600px;  /* para no extenderse mucho */
+  margin: 0 auto;    /* centra la sección en la página */
+  text-align: left;  /* alinea todo a la izquierda */
+  padding: 0 15px;   /* un poco de espacio a los lados */
 }
 
 .services h2 {
