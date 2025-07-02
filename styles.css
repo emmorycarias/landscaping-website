@@ -4,29 +4,40 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
 header {
-  background-color: #4caf50;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
   color: white;
-  padding: 20px 10px;
+  padding: 30px 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
 }
 
 .description {
   max-width: 800px;
-  margin: 20px auto;
-  padding: 0 15px;
+  margin: 30px auto;
+  padding: 0 20px;
   font-size: 18px;
-  color: #333;
 }
 
 .services {
-  background-color: #e0f7e9;
-  padding: 20px 10px;
+  background-color: #e6f5ea;
+  padding: 30px 15px;
 }
 
 .services h2 {
   margin-top: 0;
+  font-size: 28px;
 }
 
 .services ul {
@@ -41,73 +52,71 @@ header {
   background-color: #fff;
   margin: 10px 0;
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 17px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 40px;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
 }
 
 .gallery img {
   width: 300px;
   height: 200px;
   object-fit: cover;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.testimonials {
-  background-color: #fff;
-  padding: 20px 10px;
-}
-
-.testimonials blockquote {
-  font-style: italic;
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-left: 5px solid #4caf50;
-  border-radius: 5px;
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .contact-info {
   background-color: #fff;
-  padding: 20px 10px;
-  margin: 20px auto;
-  max-width: 800px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 15px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-info h2 {
-  margin-top: 0;
+  font-size: 26px;
 }
 
 .contact-info p {
-  font-size: 16px;
-  color: #333;
+  font-size: 17px;
 }
 
 .contact-buttons {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .whatsapp-btn,
 .call-btn {
   display: inline-block;
   color: white;
-  padding: 15px 25px;
+  padding: 15px 30px;
   text-decoration: none;
   font-size: 18px;
-  border-radius: 8px;
+  border-radius: 25px;
   margin: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .whatsapp-btn {
@@ -119,17 +128,19 @@ header {
 }
 
 .whatsapp-btn:hover {
-  background-color: #20b358;
+  background-color: #1ebe5d;
+  transform: scale(1.05);
 }
 
 .call-btn:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 footer {
   background-color: #333;
   color: white;
-  padding: 15px 10px;
+  padding: 20px 10px;
   font-size: 14px;
 }
 
@@ -143,4 +154,9 @@ footer {
   .services ul {
     font-size: 16px;
   }
+
+  header h1 {
+    font-size: 28px;
+  }
 }
+
