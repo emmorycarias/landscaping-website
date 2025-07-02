@@ -36,8 +36,9 @@ header p {
 }
 
 .services h2 {
-  margin-top: 0;
-  font-size: 28px;
+  text-align: left;
+  max-width: 800px; /* para que no quede muy ancho */
+  margin: 0 auto 20px; /* centrar la sección pero título alineado a la izquierda */
 }
 
 .services ul {
